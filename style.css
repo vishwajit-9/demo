@@ -1,0 +1,190 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #172554;
+    padding: 15px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+
+.hero {
+    background: linear-gradient(120deg, #1e40af, #0284c7);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: #facc15;
+    color: #172554;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #eab308;
+}
+
+
+section {
+    padding: 55px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #172554;
+    margin-bottom: 30px;
+}
+
+
+.instructor {
+    text-align: center;
+    background-color: white;
+}
+
+.instructor h3 {
+    color: #0284c7;
+    margin-bottom: 10px;
+}
+
+
+.content {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px 40px;
+    border-radius: 8px;
+}
+
+.content li {
+    margin-bottom: 12px;
+}
+
+
+.module-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.module {
+    background: white;
+    padding: 25px;
+    border-left: 5px solid #0284c7;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.module h3 {
+    color: #0284c7;
+}
+
+.module h4 {
+    margin: 8px 0;
+}
+
+
+.registration-box {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.registration-box p {
+    margin: 12px 0;
+}
+
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .module-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
